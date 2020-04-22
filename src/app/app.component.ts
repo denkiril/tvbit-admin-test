@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tvbit-admin-modules-test';
+  title = 'tvbit';
+  accauntTitle = 'Тестовый аккаунт';
+  userRoleTitle = 'Главный пользователь TVbit';
 }
