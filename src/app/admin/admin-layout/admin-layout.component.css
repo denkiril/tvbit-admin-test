@@ -1,0 +1,119 @@
+#admin-wrap {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#admin-panel {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-block {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.panel-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.user-info {
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+.user-info p {
+    margin-bottom: 7px;
+}
+
+.accaunt-title {
+    font-weight: bolder;
+}
+
+.userrole-title {
+    font-weight: lighter;
+}
+
+#adminmenu-wrap {
+    flex: auto;
+}
+
+#adminmenu {
+    --adminmenu-item-hover-color: rgb(15, 109, 231);
+
+    position: relative;
+    height: 100%;
+}
+
+.adminmenu-item {
+    list-style: none;
+    /* line-height: 40px; */
+    height: 60px;
+    width: 100%;
+}
+
+.adminmenu-item:last-of-type {
+    position: absolute;
+    bottom: 0;
+}
+
+.adminmenu-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.adminmenu-item a:hover,
+.active a {
+    color: var(--adminmenu-item-hover-color);
+}
+
+.active .item-bar {
+    background-color: var(--adminmenu-item-hover-color);
+}
+
+.item-bar {
+    display: block;
+    height: 100%;
+    width: 5px;
+    margin-right: 10px;
+}
+
+.ng-fa-icon {
+    font-size: 20px;
+}
+
+.item-title {
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+#admin-content {
+    height: 100%;
+    min-height: 100vh;
+    margin-left: 220px;
+    color: rgb(36, 36, 36);
+    background-color: rgb(226, 224, 224);
+    font-size: 1rem;
+    padding: 24px;
+}

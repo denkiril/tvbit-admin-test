@@ -1,0 +1,79 @@
+<div id="admin-wrap">
+
+    <div id="admin-panel">
+        <div class="panel-title panel-block">
+            <a [routerLink]="['/']">
+                {{title}}
+            </a>
+        </div>
+        <div class="user-info panel-block">
+            <p class="accaunt-title">{{accauntTitle}}</p>
+            <p class="userrole-title">{{userRoleTitle}}</p>
+        </div>
+        <nav id="adminmenu-wrap">
+            <ul id="adminmenu">
+                <li class="adminmenu-item" routerLinkActive="active">
+                    <a [routerLink]="['/admin', 'modules']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faTv"></fa-icon>
+                        <span class="item-title">Модули</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item" routerLinkActive="active">
+                    <a [routerLink]="['/admin', 'templates']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faTable"></fa-icon>
+                        <span class="item-title">Шаблоны</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faClock"></fa-icon>
+                        <span class="item-title">Вещание</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faCalendar"></fa-icon>
+                        <span class="item-title">Данные</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faFileAlt"></fa-icon>
+                        <span class="item-title">Статистика</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faKey"></fa-icon>
+                        <span class="item-title">Лицензии</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faCog"></fa-icon>
+                        <span class="item-title">Настройки</span>
+                    </a>
+                </li>
+                <li class="adminmenu-item">
+                    <a [routerLink]="['/']">
+                        <span class="item-bar"></span>
+                        <fa-icon [icon]="faSignOutAlt"></fa-icon>
+                        <span class="item-title">ВЫЙТИ</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="admin-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
