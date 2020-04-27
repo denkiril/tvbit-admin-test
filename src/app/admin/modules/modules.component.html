@@ -1,1 +1,19 @@
-<h1>Добро пожаловать в панель администратора TVbit</h1>
+<div class="wrap">
+    <div class="tabs">
+        <button 
+            class="tab"
+            [class.active]="view === 'monitoring'" 
+            (click)="changeView('monitoring')">Мониторинг
+        </button>
+        <button 
+            class="tab"
+            [class.active]="view === 'map'" 
+            (click)="changeView('map')">Карта
+        </button>
+    </div>
+    
+    <div class="panel-content">
+        <app-monitoring *ngIf="view === 'monitoring'"></app-monitoring>
+        <app-map *ngIf="view === 'map'"></app-map>
+    </div>
+</div>

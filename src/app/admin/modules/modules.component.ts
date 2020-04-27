@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModulesComponent implements OnInit {
 
+  view = 'monitoring';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeView(view: string) {
+    this.view = view;
   }
 
 }

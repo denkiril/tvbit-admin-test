@@ -6,5 +6,9 @@
 }
 
 html {
+    --content-text-color: gray;
+    --content-border-color: rgb(196, 196, 196);
+    --content-text-accent-color: rgb(73, 73, 73);
+
     font-family: Arial, Helvetica, sans-serif;
 }
