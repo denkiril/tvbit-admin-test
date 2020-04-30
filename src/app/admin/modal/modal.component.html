@@ -1,4 +1,4 @@
-<div class="backdrop"></div>
+<div class="backdrop" (click)="close.emit()"></div>
 
 <div class="modal">
     <button class="clr-btn close-btn" (click)="close.emit()">&times;</button>
@@ -15,7 +15,7 @@
                         <p>Введите серийный номер webOS модуля</p>
                         <input type="text" class="form-control" formControlName="serial">
                         <p 
-                            *ngIf="form.get('serial').invalid && form.get('serial').touched && form.get('serial').errors.required"
+                            *ngIf="showWarning"
                             class="error-msg">
                             Данное поле не может быть пустым
                         </p>

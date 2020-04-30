@@ -12,6 +12,7 @@ import { MonitoringComponent } from './monitoring/monitoring.component';
 import { MapComponent } from './map/map.component';
 import { ModalComponent } from './modal/modal.component';
 import { CollapsibleComponent } from './collapsible/collapsible.component';
+// import { SerialService } from './serial.service';
 
 const routes: Routes = [
   {
@@ -40,6 +41,11 @@ const routes: Routes = [
     FontAwesomeModule,
     RouterModule.forChild(routes),
   ],
-  exports: [RouterModule]
+  exports: [
+    RouterModule,
+  ],
+  providers: [
+    // SerialService,
+  ],
 })
 export class AdminModule { }
