@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -9,6 +10,8 @@ import { ModulesComponent } from './modules/modules.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { MonitoringComponent } from './monitoring/monitoring.component';
 import { MapComponent } from './map/map.component';
+import { ModalComponent } from './modal/modal.component';
+import { CollapsibleComponent } from './collapsible/collapsible.component';
 
 const routes: Routes = [
   {
@@ -27,9 +30,13 @@ const routes: Routes = [
     TemplatesComponent,
     MonitoringComponent,
     MapComponent,
+    ModalComponent,
+    CollapsibleComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     FontAwesomeModule,
     RouterModule.forChild(routes),
   ],

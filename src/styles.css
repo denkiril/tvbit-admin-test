@@ -9,6 +9,37 @@ html {
     --content-text-color: gray;
     --content-border-color: rgb(196, 196, 196);
     --content-text-accent-color: rgb(73, 73, 73);
+    --ref-btn-color: #007aff;
 
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-bottom: 0.9em;
+}
+
+.clr-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+.ref-btn {
+    width: 222px;
+    border: 1px solid var(--ref-btn-color);
+    color: var(--ref-btn-color);
+    line-height: 32px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.main-btn {
+    border: none;
+    color: white;
+    background-color: var(--ref-btn-color);
+    margin: 1em auto;
 }

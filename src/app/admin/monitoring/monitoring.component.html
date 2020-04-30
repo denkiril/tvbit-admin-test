@@ -11,8 +11,8 @@
                 <p><span class="marker">1.</span>Установите Клиент TVbit на все информационные модули</p>
             </div>
             <div class="col">
-                <a class="ref-btn" href="#">32-bit установщик для Windows</a>
-                <a class="ref-btn" href="#">64-bit установщик для Windows</a>
+                <a class="clr-btn ref-btn" href="#">32-bit установщик для Windows</a>
+                <a class="clr-btn ref-btn" href="#">64-bit установщик для Windows</a>
             </div>
         </div>
         <div class="row">
@@ -20,10 +20,16 @@
                 <p><span class="marker">2.</span>Загрузите лицензионные ключи</p>
             </div>
             <div class="col">
-                <a class="ref-btn" href="#">Перейти к загрузке</a>
+                <a class="clr-btn ref-btn" href="#">Перейти к загрузке</a>
             </div>
         </div>
     </div>
 
-    <button class="ref-btn main-btn">Добавить webOS модуль</button>
+    <button class="clr-btn ref-btn main-btn" (click)="modal = true">Добавить webOS модуль</button>
 </div>
+
+<app-modal
+    *ngIf="modal"
+    modalTitle="Добавить webOS модуль"
+    (close)="modal = false">
+</app-modal>

@@ -1,5 +1,5 @@
 .section {
-    padding: 28px 32px 20px 32px;
+    padding: 28px 32px 8px 32px;
 }
 
 .header {
@@ -14,10 +14,6 @@
 
 .subtitle {
     font-size: 14px;
-}
-
-.main {
-    --ref-btn-color: #007aff;
 }
 
 .block {
@@ -40,24 +36,4 @@
 .marker {
     color: var(--ref-btn-color);
     margin-right: 4px;
-}
-
-.ref-btn {
-    display: block;
-    width: 222px;
-    border: 1px solid var(--ref-btn-color);
-    color: var(--ref-btn-color);
-    text-decoration: none;
-    text-align: center;
-    line-height: 32px;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.main-btn {
-    border: none;
-    color: white;
-    background-color: var(--ref-btn-color);
-    margin: 0 auto;
 }

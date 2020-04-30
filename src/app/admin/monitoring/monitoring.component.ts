@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonitoringComponent implements OnInit {
 
+  modal = false
+  
   constructor() { }
 
   ngOnInit(): void {

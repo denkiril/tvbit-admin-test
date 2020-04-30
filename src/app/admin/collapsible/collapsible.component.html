@@ -1,0 +1,11 @@
+<button type="button" class="clr-btn uncover-btn" (click)="togglePanel()">
+    <fa-icon 
+        class="chevron" 
+        [icon]="showPanel ? faChevronDown : faChevronUp">
+    </fa-icon>
+    {{panelTitle}}
+</button>
+
+<div *ngIf="showPanel" class="covered">
+    <ng-content></ng-content>
+</div>

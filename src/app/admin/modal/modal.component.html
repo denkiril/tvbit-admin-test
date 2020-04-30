@@ -1,0 +1,83 @@
+<div class="backdrop"></div>
+
+<div class="modal">
+    <button class="clr-btn close-btn" (click)="close.emit()">&times;</button>
+
+    <div class="header section">
+        <p>{{ modalTitle }}</p>
+    </div>
+
+    <div class="main">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="scrolled">
+                <div class="main-block section">
+                    <div class="block">
+                        <p>Введите серийный номер webOS модуля</p>
+                        <input type="text" class="form-control" formControlName="serial">
+                        <p 
+                            *ngIf="form.get('serial').invalid && form.get('serial').touched && form.get('serial').errors.required"
+                            class="error-msg">
+                            Данное поле не может быть пустым
+                        </p>
+                    </div>
+                
+                    <p>Инструкция по настройке webOS модуля:</p>
+                    <div class="instructions">
+                        <app-collapsible panelTitle="webOS Signage 4.0">
+                            <p class="instructions-item-title">Сброс до заводских настроек</p>
+                            <ol>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла-бла-бла бла блбла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла-бла-бла бла блбла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла--бла-бла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла-бла-бла бла блбла бла-бла бла блбла бла-бла бла блбла бла-бла бла блбла на две и более строки</li>
+                                <li>Бла-бла-бла бла блбла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла бла-бла</li>
+                                <li>Бла-бла-бла</li>
+                            </ol>
+                            <p class="instructions-item-title">Автоматическая настройка</p>
+                            <ol>
+                                <li>Бла-бла-бла со <a href="#">ссылками</a>. </li>
+                                <li>Бла-бла-бла бла блбла</li>
+                                <li>Бла-бла-бла</li>
+                                <li>Бла-бла-бла</li>
+                            </ol>
+                        </app-collapsible>
+                        <app-collapsible panelTitle="webOS Signage 3.2 (3.0+)">
+                            <p class="instructions-item-title">Сброс до заводских настроек</p>
+                            <ol>
+                                <li>Пунккт</li>
+                                <li>Пунккт</li>
+                                <li>Пунккт</li>
+                                <li>Пунккт</li>
+                                <li>Пунккт</li>
+                                <li>Пунккт</li>
+                            </ol>
+                        </app-collapsible>
+                        <app-collapsible panelTitle="webOS Signage 3.0">
+                            <p class="instructions-item-title">Сброс до заводских настроек</p>
+                            <ol>
+                                <li>Пункккт</li>
+                                <li>Пункккт</li>
+                                <li>Пункккт</li>
+                                <li>Пункккт</li>
+                                <li>Пункккт</li>
+                                <li>Пункккт</li>
+                            </ol>
+                        </app-collapsible>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <button class="clr-btn ref-btn main-btn" type="submit">Добавить</button>
+                <p class="hint-text">Модуль зарезервируется на 5 минут</p>
+            </div>
+        </form>
+    </div>
+</div>
