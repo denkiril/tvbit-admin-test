@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/tvbit-admin-modules-test",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

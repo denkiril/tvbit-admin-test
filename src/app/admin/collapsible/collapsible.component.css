@@ -5,12 +5,14 @@
 
 .uncover-btn {
     margin-bottom: 0.9em;
-    color: var(--content-text-color);
+    /* color: var(--content-text-color); */
+    color: gray;
 }
 
 .uncover-btn:hover,
 .uncover-btn:focus {
-    color: var(--content-text-accent-color);
+    /* color: var(--content-text-accent-color); */
+    color: rgb(73, 73, 73);
 }
 
 .chevron {

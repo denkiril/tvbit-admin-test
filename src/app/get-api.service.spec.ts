@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SerialService } from './serial.service';
+import { GetApiService } from './get-api.service';
 
-describe('SerialService', () => {
-  let service: SerialService;
+describe('GetApiService', () => {
+  let service: GetApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SerialService);
+    service = TestBed.inject(GetApiService);
   });
 
   it('should be created', () => {

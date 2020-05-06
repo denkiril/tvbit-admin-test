@@ -12,7 +12,8 @@ import { MonitoringComponent } from './monitoring/monitoring.component';
 import { MapComponent } from './map/map.component';
 import { ModalComponent } from './modal/modal.component';
 import { CollapsibleComponent } from './collapsible/collapsible.component';
-// import { SerialService } from './serial.service';
+import { MapWidgetComponent } from './map-widget/map-widget.component';
+// import { GetApiService } from '../get-api.service';
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
     MapComponent,
     ModalComponent,
     CollapsibleComponent,
+    MapWidgetComponent,
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,7 @@ const routes: Routes = [
     RouterModule,
   ],
   providers: [
-    // SerialService,
+    // GetApiService,
   ],
 })
 export class AdminModule { }

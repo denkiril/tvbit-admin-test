@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-import { SerialService } from '../serial.service';
+import { ServerService } from '../server.service';
 
 @Component({
   selector: 'app-modal',
@@ -17,7 +17,7 @@ export class ModalComponent implements OnInit {
   showWarning = false;
 
   constructor(
-    private serialService: SerialService
+    private serverService: ServerService
   ) { }
 
   ngOnInit(): void {
@@ -27,17 +27,15 @@ export class ModalComponent implements OnInit {
   }
 
   submit() {
-    console.log('-submit-');
+    // console.log('-submit-');
     this.showWarning = !this.form.valid;
 
     if (this.form.valid) {
-      console.log('Form:', this.form);
-      const formData = {...this.form.value}
-  
-      console.log('Form Data:', formData);
+      // console.log('Form:', this.form);
+      // const formData = {...this.form.value};
+      // console.log('Form Data:', formData);
 
-      this.serialService.postSerial(this.form.value.serial)
-        .subscribe(serial => console.log(`after postSerial: ${serial}`));
+      this.serverService.postSerial(this.form.value.serial).subscribe();
 
       this.form.reset()
     }

@@ -11,7 +11,7 @@
             <p class="userrole-title">{{userRoleTitle}}</p>
         </div>
         <nav id="adminmenu-wrap">
-            <ul id="adminmenu">
+            <ul>
                 <li class="adminmenu-item" routerLinkActive="active">
                     <a [routerLink]="['/admin', 'modules']">
                         <span class="item-bar"></span>
@@ -61,6 +61,8 @@
                         <span class="item-title">Настройки</span>
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li class="adminmenu-item">
                     <a [routerLink]="['/']">
                         <span class="item-bar"></span>

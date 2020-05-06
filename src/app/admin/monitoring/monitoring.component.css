@@ -3,13 +3,15 @@
 }
 
 .header {
-    border-bottom: 1px solid var(--content-border-color);
+    /* border-bottom: 1px solid var(--content-border-color); */
+    border-bottom: 1px solid rgb(196, 196, 196);
 }
 
 .title {
     font-size: 22px;
     margin-bottom: 18px;
-    color: var(--content-text-accent-color);
+    /* color: var(--content-text-accent-color); */
+    color: rgb(73, 73, 73);
 }
 
 .subtitle {
@@ -34,6 +36,7 @@
 }
 
 .marker {
-    color: var(--ref-btn-color);
+    /* color: var(--ref-btn-color); */
+    color: #007aff;
     margin-right: 4px;
 }

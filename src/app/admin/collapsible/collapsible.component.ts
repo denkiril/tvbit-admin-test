@@ -20,7 +20,7 @@ export class CollapsibleComponent implements OnInit {
   }
 
   togglePanel(): void {
-    console.log('-togglePanel-');
+    // console.log('-togglePanel-');
     this.showPanel = !this.showPanel;
   }
 

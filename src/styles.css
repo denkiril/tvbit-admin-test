@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
-html {
+/* :root {
     --content-text-color: gray;
     --content-border-color: rgb(196, 196, 196);
     --content-text-accent-color: rgb(73, 73, 73);
     --ref-btn-color: #007aff;
+    --adminmenu-item-hover-color: rgb(15, 109, 231);
+} */
 
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,8 +33,10 @@ p {
 
 .ref-btn {
     width: 222px;
-    border: 1px solid var(--ref-btn-color);
-    color: var(--ref-btn-color);
+    /* border: 1px solid var(--ref-btn-color); */
+    border: 1px solid #007aff;
+    /* color: var(--ref-btn-color); */
+    color: #007aff;
     line-height: 32px;
     margin-bottom: 5px;
     font-size: 0.9em;
@@ -40,6 +45,7 @@ p {
 .main-btn {
     border: none;
     color: white;
-    background-color: var(--ref-btn-color);
+    /* background-color: var(--ref-btn-color); */
+    background-color: #007aff;
     margin: 1em auto;
 }
